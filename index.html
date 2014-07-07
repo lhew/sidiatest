@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SIDIA test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/sidiatest.min.css">
+</head>
+<body>
+	<main id="wrapper">
+		<header id="headerContainer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-6">
+						<h1>SIDIA Test</h1>
+					</div>
+					<div class="col-md-4 col-sm-6 search-channels">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Buscar canais"  name="channel" id="searchInput">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button" id="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div><!-- /input-group -->
+					</div><!-- /.col-lg-6 -->
+				</div>
+				<hr>
+			</div>
+		</header>
+		<section id="midcontainer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 hidden" id="channelHeader">
+						<h2></h2>
+					</div>
+				</div>
+					<div id="swiper" class="swiper swiper-container">
+						<div class="swiper-wrapper">
+
+						</div>
+					</div>
+			</div>
+		</section>
+	</main>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true"  data-keyboard="false" data-backdrop="static">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close closemodal" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+	        <h4 class="modal-title">Buscando canal</h4>
+	      </div>
+	      <div class="modal-body" id="modal-body">
+	        <p>Aguarde um momento enquanto seu canal é localizado</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default closemodal" data-dismiss="modal">Fechar</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<script type="text/javascript" src="js/dist/sidiatest.min.js"></script>
+</body>
+</html>

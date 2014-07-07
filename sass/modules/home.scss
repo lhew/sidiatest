@@ -1,0 +1,84 @@
+/*****************************************************************/
+/**                           HOME                              **/
+/*****************************************************************/
+
+.page-home{
+	
+	.vaivendo-fixed{
+		@include transition(all 0.15s ease-out);
+		@include hide-text;
+		@include background(url("images/h-vaivendo-green.png") center no-repeat);
+		position: fixed;
+		left:0;
+		top:-110px;
+		height: 110px; 
+		background-color: $primary_color;
+		background-size:400px;
+		width:100%;
+		z-index: 90;
+	}
+
+	.vaivendo-active{
+		top:0;
+	}
+
+	.section-blog-posts{
+		position: relative;
+		z-index: 3;
+		margin-top:1000px;
+		background:url('images/bgsite.gif') $fill_color;
+
+		h1{
+			padding: 34px 0px;
+			text-align: center;
+		}
+
+		header{
+			@extend .vaivendo-fixed;
+			margin-bottom:100px;
+			height:240px;
+			position: static;
+			background-size: auto;
+		}
+	}
+
+
+
+	
+
+	.section-splash{
+		width: 100%;
+		height: 1000px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background: url('images/bg-splash.jpg') $primary_color  no-repeat center;
+		
+		video{
+			@include transition(all 1.5s ease-in 1s);
+			@include Opacity(0);
+			position: absolute;
+			margin-left:50%;
+			left:-960px;
+
+		}
+
+		.container{
+			min-width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+
+			div.imgTitle{
+				@include position(absolute, 0 null null 50%);
+				z-index: 100;
+				margin: 200px 0 0 -245px;
+				@include size(540px 495px);
+				background:url('images/chamada-home.png') no-repeat;
+			}
+		}
+	}
+}
